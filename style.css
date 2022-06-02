@@ -1,0 +1,33 @@
+.title{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    padding-left: clamp(1em, 1.5em, 5em);
+
+
+    color: #A05464;
+}
+.subtitle{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 26px;
+    padding-left: clamp(0.1em, 0.3em, 3em);
+    margin-top: 0;
+
+    color: #454545;
+
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: clamp(1em, 1.5em, 5em);
+    padding-right: clamp(1em, 1.5em, 5em);
+    background-color: #F5F5F5;
+    border-bottom: 7px solid #4B272F;
+}
