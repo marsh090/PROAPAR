@@ -24,6 +24,15 @@ body{
     top: 8em;
     margin-right: 3em;
 }
+@media screen and (max-width: 600px) {
+    .calenderBtn{
+        position: absolute;
+        top: 7em;
+        margin-right: 0em;
+    }
+}
+  
+}
 
 .title{
     font-family: 'Exo 2';
@@ -214,7 +223,12 @@ body{
 #calender{
     display: none;
 }
-
+@media screen and (max-width: 800px) {
+    #calender{
+      max-width: 15em;
+      max-height: 15em;
+    }
+}
 
 /* circulo verde */
 .greenCircle {
