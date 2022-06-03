@@ -9,34 +9,27 @@
 
     color: #A05464;
 }
-@media screen and (min-width: 800px) {
-    .subtitle{
-        font-family: 'Exo 2';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1.1em;
-        line-height: 26px;
-        padding-left: clamp(0.1em, 0.3em, 3em);
-        margin-top: 0;
-        margin: 0;
-        
-        color: #454545;
-    
+@media screen and (max-width: 800px) {
+    .title{
+        padding-left: clamp(0.1em, 0.1em, 0.8em);
     }
 }
-@media screen and (max-width: 799px) {
-    .subtitle{
-        font-family: 'Exo 2';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 0.9em;
-        line-height: 26px;
-        padding-left: clamp(0.1em, 0.3em, 3em);
-        margin-top: 0;
-        margin: 0;
+.subtitle{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 26px;
+    padding-left: clamp(0.1em, 0.3em, 3em);
+    margin-top: 0;
+    margin: 0;
         
-        color: #454545;
+    color: #454545;
     
+}
+@media screen and (max-width: 800px) {
+    .subtitle{
+        font-size: 0.9em;
     }
 }
 .header{
@@ -55,9 +48,16 @@
     align-items: flex-end;
     justify-content: right;
 }
+@media screen and (max-width: 800px) {
+    .icons{
+        display: none;
+    }
+}
 .faq, .chat, .notifi, .profile{
     margin-left: 1em;
 }
+
+/* dropdown button */
 .dropbtn {
     border: none;
     background-color: #f8f4f4;
@@ -87,3 +87,31 @@
 .dropdown-content a:hover {background-color: #ddd;}
   
 .dropdown:hover .dropdown-content {display: block;}
+/* End of dropdown button */
+
+/* botão voltar */
+
+
+/* circulo verde */
+.greenCircle {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    border: #454545 solid 0.15em;
+    background-color: #0ED15C;
+    margin-right: 1em;
+}
+.whiteCircle {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    border: #454545 solid 0.15em;
+    background-color: #FFFFFF;
+    margin-right: 1em;
+}
