@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
 .title{
     font-family: 'Exo 2';
     font-style: normal;
@@ -8,6 +12,17 @@
     margin: 0;
 
     color: #A05464;
+}
+.pageTitle{
+    font-size: clamp(1.5em, 1.6em, 2.5em);
+    line-height: clamp(1.5em, 1.6em, 2.5em);
+    padding: 0.5em;
+    margin-left: 20em;
+}
+@media screen and (max-width: 800px){
+    .pageTitle{
+        margin-left: 0em;
+    }
 }
 @media screen and (max-width: 800px) {
     .title{
@@ -33,6 +48,7 @@
     }
 }
 .header{
+    width: 100%;
     display: flex;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -53,8 +69,12 @@
         display: none;
     }
 }
+
 .faq, .chat, .notifi, .profile{
     margin-left: 1em;
+}
+.arrow{
+    margin: 1em;
 }
 
 /* dropdown button */
