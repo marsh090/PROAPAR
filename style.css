@@ -14,7 +14,7 @@ body{
     background-color: #23c483;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
-    transform: translateY(-7px);
+    transform: translateY(-5px);
   }
 .btn:active {
     transform: translateY(-1px);
@@ -27,8 +27,9 @@ body{
 @media screen and (max-width: 600px) {
     .calenderBtn{
         position: absolute;
-        top: 7em;
+        top: 20%;
         margin-right: 0em;
+        z-index: -1;
     }
 }
 
@@ -45,9 +46,8 @@ body{
 }
 .pageTitle{
     font-size: clamp(1.5em, 1.6em, 2.5em);
-    line-height: clamp(1.5em, 1.6em, 2.5em);
     padding: 0.5em;
-    margin-left: 22em;
+    margin-left: 38%;
 }
 @media screen and (max-width: 800px){
     .pageTitle{
@@ -185,6 +185,46 @@ body{
 .arrow{
     margin: 1em;
 }
+.plane{
+  position: absolute;
+  top: 38%;
+  left: 30%;
+  transform: rotate(45deg);
+  z-index: 1;
+  animation: fly 3s linear infinite;
+  animation-direction: normal;
+  color: #23c483;
+}
+@keyframes fly {
+  0%   {left: 25%;}
+  100% {left: 40%;}
+}
+@keyframes flyMobile {
+  0%   {left: 12%;}
+  100% {left: 33%;}
+}
+.aguard{
+  font-size: 12px;
+  z-index: -2; position: absolute; left: 20.5%; top: 45%; color: #454545; 
+}
+@media screen and (max-width: 800px) {
+    .plane{
+        top: 38%;
+        left: 24%;
+        transform: rotate(45deg);
+        z-index: -2;
+        color: #23c483;
+        animation: flyMobile 2.5s linear infinite;
+        animation-direction: normal;
+    }
+    .aguard{
+        font-size: 12px;
+        left: 30%;
+        top: 45%;
+        z-index: -2
+    }
+}
+
 
 /* dropdown button */
 .dropbtn {
@@ -203,7 +243,7 @@ body{
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2;
   }
   
 .dropdown-content a {
@@ -220,34 +260,83 @@ body{
 
 #calender{
     display: none;
+    position: absolute;
+    top: 80%;
+    z-index: 1;
+
 }
 @media screen and (max-width: 800px) {
     #calender{
       max-width: 15em;
       max-height: 15em;
+      z-index: 1;
     }
 }
 
-/* circulo verde */
+/* barra de status */
 .greenCircle {
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
     border: #454545 solid 0.15em;
     background-color: #0ED15C;
     margin-right: 1em;
+    z-index: -2;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    transform: translate(-50%, -50%);
 }
 .whiteCircle {
     display: inline-block;
-    width: 34px;
-    height: 34px;
+    width: 28px;
+    height: 28px;
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
     border: #454545 solid 0.15em;
     background-color: #FFFFFF;
     margin-right: 1em;
+}
+.p0, .p1, .p2, .p3, .p4{
+  z-index: -2;
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.p0{
+  top: 40%;
+  left: 0%;
+}
+.p1{
+  top: 40%;
+  left: 33%;
+}
+.p2{
+  top: 40%;
+  left: 66%;
+}
+.p3{
+  top: 40%;
+  left: 100%;
+}
+.barra{
+  display: inline-block;
+  width: 50%;
+  height: 0.2em;
+  background-color: #454545;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+@media screen and (max-width: 800px) {
+    .barra{
+      width: 80%;
+      z-index: -2;
+    }
 }
