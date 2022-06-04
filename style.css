@@ -340,3 +340,9 @@ body{
       z-index: -2;
     }
 }
+
+
+#map { 
+  height: 30em;
+  width: 30em;
+}

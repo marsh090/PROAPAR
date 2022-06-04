@@ -7,7 +7,7 @@ function display(){
     }
 }
 
-// https://api.hgbrasil.com/weather?key=241f9b8a&lat=47.097133&lon=37.543367&user_ip=remote
+// https://api.hgbrasil.com/weather?key=1712e132&lat=47.097133&lon=37.543367&user_ip=remote
 
 var map
 
@@ -15,7 +15,7 @@ async function showPosition(pos){
   var lt = 47.097133
   var lg = 37.543367
 
-  var url = "https://api.hgbrasil.com/weather?format=json-cors&key=241f9b8a&lat=47.097133&lon=37.543367&user_ip=remote"
+  var url = "https://api.hgbrasil.com/weather?format=json-cors&key=1712e132&lat=47.097133&lon=37.543367&user_ip=remote"
 
   var response = await fetch(url)
   var data = await response.json()
@@ -26,7 +26,7 @@ async function showPosition(pos){
 
   map = L.map('map').setView([lt, lg], 16);
   var marker = L.marker([lt, lg]).addTo(map);
-  var texto = "Ultima localização"
+  var texto = "Ultima localização: " + cidade
   marker.bindPopup(texto).openPopup()
 
   map.on("contextmenu", addMarker)
@@ -46,16 +46,14 @@ async function addMarker(e){
   var lt = e.latlng.lat
   var lg = e.latlng.lng
   
-  var url = "https://api.hgbrasil.com/weather?format=json-cors&key=eeb97240&lat="+lt+"&lon="+lg + "&user_ip=remote"
+  var url = "https://api.hgbrasil.com/weather?format=json-cors&key=1712e132&lat="+lt+"&lon="+lg + "&user_ip=remote"
   var response = await fetch(url)
   var data = await response.json()
   
 
   var cidade = data.results.city
-  var temp = data.results.temp
-  var desc = data.results.description
 
   var marker = L.marker([lt, lg]).addTo(map);
-  var texto = "Clima em "+cidade+" é "+temp+"°, "+ desc
+  var texto = "Refugiada se encontra em "+cidade+"
   marker.bindPopup(texto).openPopup()
 }
