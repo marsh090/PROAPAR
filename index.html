@@ -17,100 +17,114 @@
   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
   crossorigin=""></script>
       </head>
-<body>
-    <!-- Header -->
-    <div class="header w3-row">
-        <div class="w3-third">
-            <center>
-                <h1 class="title"><b>PROAPAR</b></h1>
-                <p class="subtitle"> <i>Programa de Apoio e Auxiílio para Refugiadas</i></p>
-            </center>
+    <body>
+        <!-- Header -->
+        <div class="header w3-row">
+            <div class="w3-third">
+                <center>
+                    <h1 class="title"><b>PROAPAR</b></h1>
+                    <p class="subtitle"> <i>Programa de Apoio e Auxiílio para Refugiadas</i></p>
+                </center>
+            </div>
+            <div class="w3-twothird w3-container icons">
+                <img src="img/iconFAQ.svg" alt="FAQ" class="faq">
+                <img src="img/iconCHAT.svg" alt="chat" class="chat">
+                <img src="img/iconNotif.svg" alt="notifications" class="notifi">
+                <div class="dropdown">
+                    <button class="dropbtn"><img src="img/iconPF.svg" alt="profile" class="profile"></button>
+                    <div class="dropdown-content">
+                      <a href="#">Meu perfil</a>
+                      <a href="#">Página inicial</a>
+                      <a href="https://github.com/marsh090/PROAPAR" style="color: red;"><i class="fa fa-arrow-left"></i> Sair</a>
+                    </div>
+                  </div>  
+            </div>
+            <!-- hamburguer -->
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#"><i class="fa fa-user"></i> Meu perfil</a></li>
+                  <li><a class="menu__item" href="#"><i class="fa-solid fa-house"></i> Página inicial</a></li>
+                  <li><a class="menu__item" href="#">Notificação</a></li>
+                  <li><a class="menu__item" href="#">Chat</a></li>
+                  <li><a class="menu__item" href="#">FAQ</a></li>
+                  <li><a class="menu__item" href="https://github.com/marsh090/PROAPAR" style="color: red;"><i class="fa fa-arrow-left"></i> Sair</a></li>
+                </ul>
+              </div>
         </div>
-        <div class="w3-twothird w3-container icons">
-            <img src="img/iconFAQ.svg" alt="FAQ" class="faq">
-            <img src="img/iconCHAT.svg" alt="chat" class="chat">
-            <img src="img/iconNotif.svg" alt="notifications" class="notifi">
-            <div class="dropdown">
-                <button class="dropbtn"><img src="img/iconPF.svg" alt="profile" class="profile"></button>
-                <div class="dropdown-content">
-                  <a href="#">Meu perfil</a>
-                  <a href="#">Página inicial</a>
-                  <a href="https://github.com/marsh090/PROAPAR" style="color: red;"><i class="fa fa-arrow-left"></i> Sair</a>
-                </div>
-              </div>  
+        <!-- End of Header -->
+
+        <!-- Main -->
+        <!--- Acompanhar viajem da refugiada -->
+        <div class="w3-row">
+            <!--- back arrow -->
+            <div class="w3-col arrow " style="width:50px;">
+                <a href="index.html">
+                    <span style="color: #454545;">
+                        <i class="fa fa-arrow-left fa-2x"></i>
+                    </span>
+                </a>
+            </div>
+
+            <!--- Title -->
+            <div class="w3-rest bar">
+                    <p class="pageTitle">Acompanhar viajem</p>
+            </div>
         </div>
-        <!-- hamburguer -->
-        <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
+
+        <!--- Calendar -->
+        <div class="canto">
+            <div class="calenderBtn w3-padding" style="display: flex; justify-content: end;">
+                <p style="margin-top: 1em;">Previsão de chegada: 20/06/22</p>
+                <button class="btn" onclick="display()">
+                    <i class="fa fa-calendar"></i>
+                </button>
+                <iframe id="calender" src="https://calendar.google.com/calendar/embed?height=320&wkst=1&bgcolor=%23009688&ctz=America%2FSao_Paulo&showTitle=1&showTz=0&showNav=1&showCalendars=0&showTabs=0&showPrint=0&title=Acompanhar%20Refugiada&src=aGhzMGptOXMwMzl0aHNlZGFwbmM5amY0MXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23C0CA33" style="border:solid 1px #777" width="400" height="320" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+
+        <!-- Status de viajem -->
+        <center>
+            <div class="barra">
+                <span class="whiteCircle p0"></span>
+                <span class="whiteCircle p1"></span>
+                <span class="whiteCircle p2"></span>
+                <span class="whiteCircle p3"></span>
+                <span class="greenCircle p0"></span>
+            </div>
+        </center>
+        <span class="aguard">Confirmação da moradia</span>
+        <center><i class="fa fa-plane fa-2x plane"></i></center> 
+
         
-            <ul class="menu__box">
-              <li><a class="menu__item" href="#"><i class="fa fa-user"></i> Meu perfil</a></li>
-              <li><a class="menu__item" href="#"><i class="fa-solid fa-house"></i> Página inicial</a></li>
-              <li><a class="menu__item" href="#">Notificação</a></li>
-              <li><a class="menu__item" href="#">Chat</a></li>
-              <li><a class="menu__item" href="#">FAQ</a></li>
-              <li><a class="menu__item" href="https://github.com/marsh090/PROAPAR" style="color: red;"><i class="fa fa-arrow-left"></i> Sair</a></li>
-            </ul>
-          </div>
-    </div>
-    <!-- End of Header -->
+        <center>
+            <div class="bottom">
+                    <div class="mapPosition">
+                        <div id="map"></div>
+                    </div>
+                <br>
+                <div class="footer">
+                    <p class="footerTitle">PROAPAR</p>
+                    <p class="footerText">Ajude-nos também nas redes sociais:</p> <br>
+                    <p class="footerText"> 
+                        <i class="fa fa-facebook fa-lg"></i>
+                        <i class="fa fa-lg fa-whatsapp"></i> 
+                        <i class="fa fa-instagram fa-lg"></i> <br>
+                    </p>
+                    <p class="direitos">Copyright © 2022 Grupo 6 de UX - UVV. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </center>
+        
 
-    <!-- Main -->
-    <!--- Acompanhar viajem da refugiada -->
-    <div class="w3-row">
-        <!--- back arrow -->
-        <div class="w3-col arrow " style="width:50px;">
-            <a href="index.html">
-                <span style="color: #454545;">
-                    <i class="fa fa-arrow-left fa-2x"></i>
-                </span>
-            </a>
-        </div>
 
-        <!--- Title -->
-        <div class="w3-rest bar">
-                <p class="pageTitle">Acompanhar viajem</p>
-        </div>
-    </div>
-
-    <!--- Calendar -->
-    <div class="canto">
-        <div class="calenderBtn w3-padding" style="display: flex; justify-content: end;">
-            <p style="margin-top: 1em;">Previsão de chegada: 20/06/22</p>
-            <button class="btn"onclick="display()">
-                <i class="fa fa-calendar"></i>
-            </button>
-            <iframe id="calender" src="https://calendar.google.com/calendar/embed?height=320&wkst=1&bgcolor=%23009688&ctz=America%2FSao_Paulo&showTitle=1&showTz=0&showNav=1&showCalendars=0&showTabs=0&showPrint=0&title=Acompanhar%20Refugiada&src=aGhzMGptOXMwMzl0aHNlZGFwbmM5amY0MXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23C0CA33" style="border:solid 1px #777" width="400" height="320" frameborder="0" scrolling="no"></iframe>
-        </div>
-    </div>
-
-    <!-- Status de viajem -->
-    <center>
-        <div class="barra">
-            <span class="whiteCircle p0"></span>
-            <span class="whiteCircle p1"></span>
-            <span class="whiteCircle p2"></span>
-            <span class="whiteCircle p3"></span>
-            <span class="greenCircle p0"></span>
-        </div>
-    </center>
-    <span class="aguard">Confirmação da moradia</span>
-    <center><i class="fa fa-plane fa-2x plane"></i></center> 
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     
-    <center>
-        <div30em>
-            <h3 id="geo"></h3>
-            <div id="map"></div>
-        </div>
-    </center>
-    
-
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    
-</body>
+    </body>
 </html>
