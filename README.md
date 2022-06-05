@@ -1,6 +1,7 @@
 ## PROAPAR - acompanhar viajem  
 
 Este trabalho foi realizado pelo aluno Lucas Zanon Guarnier para a matéria de Construção de Software para Web ministrada pelo professor Ricardo Mendes Costa Segundo.  
+<a href="https://marsh090.github.io/PROAPAR/">Link para o Github Pages</a>
 
 Explicação do que foi feito em JS:  
 
@@ -30,11 +31,7 @@ A função a seguir foi feita para mostrar na tela um calendário ao se clicar n
 	L.marker([47.09514, 37.54131]).addTo(map)
 	.bindPopup('Mariupol, Ukraine')
 	.openPopup();
+	
 	Codigo HTML:
 	<div id="map"></div>
 
-
-
-
-
-<a href="https://marsh090.github.io/PROAPAR/">Github Pages</a>
