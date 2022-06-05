@@ -25,7 +25,7 @@ A função a seguir foi feita para mostrar na tela um calendário ao se clicar n
     var  map  =  L.map('map').setView([47.09514, 37.54131], 16);
     
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	attribution: '&copy; <a	href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 	contributors'
+	attribution: '&copy; <a	href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
 	
 	L.marker([47.09514, 37.54131]).addTo(map)
