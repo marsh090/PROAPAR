@@ -1,9 +1,9 @@
 function display(){
-    var x = document.getElementById("calender");
-    if (x.style.display === "none") {
-        x.style.display = "block";
+    var calender = document.getElementById("calender");
+    if (calender.style.display === "none") {
+        calender.style.display = "block";
     } else {
-        x.style.display = "none";
+        calender.style.display = "none";
     }
 }
 
