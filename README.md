@@ -2,6 +2,7 @@
 
 Este trabalho foi realizado pelo aluno Lucas Zanon Guarnier para a matéria de Construção de Software para Web ministrada pelo professor Ricardo Mendes Costa Segundo.  
 <a href="https://marsh090.github.io/PROAPAR/">Link para o Github Pages</a>
+Este site apresenta uma pagina "acompanhar viajem" de um prototipo desenvolvido para UX
 
 Explicação do que foi feito em JS:  
 
