@@ -187,7 +187,7 @@ body{
 }
 .plane{
   position: absolute;
-  top: 38%;
+  top: 37.2%;
   left: 30%;
   transform: rotate(45deg);
   z-index: 1;
@@ -209,7 +209,7 @@ body{
 }
 @media screen and (max-width: 800px) {
     .plane{
-        top: 36%;
+        top: 35.4%;
         left: 24%;
         transform: rotate(45deg);
         z-index: -2;
